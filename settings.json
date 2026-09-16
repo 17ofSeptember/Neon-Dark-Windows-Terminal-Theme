@@ -1,0 +1,130 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "id": "User.OpenPaneWorkspace",
+            "name": "New Pane Workspace",
+            "command": {
+                "action": "multipleActions",
+                "actions": [
+                    {
+                        "action": "newTab"
+                    },
+                    {
+                        "action": "splitPane",
+                        "split": "vertical",
+                        "size": 0.49
+                    },
+                    {
+                        "action": "splitPane",
+                        "split": "horizontal",
+                        "size": 0.53
+                    },
+                    {
+                        "action": "splitPane",
+                        "split": "horizontal",
+                        "size": 0.42
+                    }
+                ]
+            }
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "keybindings": [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.OpenPaneWorkspace",
+            "keys": "ctrl+shift+t"
+        }
+    ],
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "colorScheme": "Neon Dark",
+            "font": {
+                "face": "Cascadia Mono",
+                "size": 12,
+                "weight": "normal"
+            },
+            "cursorShape": "filledBox",
+            "padding": "12, 8, 12, 8",
+            "opacity": 100,
+            "useAcrylic": false,
+            "antialiasingMode": "grayscale",
+            "intenseTextStyle": "bright",
+            "cursorColor": "#FF007C",
+            "scrollbarState": "hidden",
+            "adjustIndistinguishableColors": "never"
+        },
+        "list": []
+    },
+    "schemes": [
+        {
+            "name": "Neon Dark",
+            "background": "#090A0F",
+            "foreground": "#F8F8F2",
+            "cursorColor": "#FF007C",
+            "selectionBackground": "#293040",
+            "black": "#1C1E26",
+            "red": "#FF453A",
+            "green": "#32D74B",
+            "yellow": "#FFD60A",
+            "blue": "#0A84FF",
+            "purple": "#BF5AF2",
+            "cyan": "#64D2FF",
+            "white": "#E5E5EA",
+            "brightBlack": "#6B7089",
+            "brightRed": "#FF6961",
+            "brightGreen": "#29FF50",
+            "brightYellow": "#FFE620",
+            "brightBlue": "#5E5CE6",
+            "brightPurple": "#DA8FFF",
+            "brightCyan": "#66FFE3",
+            "brightWhite": "#FFFFFF"
+        }
+    ],
+    "themes": [
+        {
+            "name": "Neon Window",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false
+            },
+            "tab": {
+                "background": "#090A0F",
+                "unfocusedBackground": "#11151F",
+                "showCloseButton": "never"
+            },
+            "tabRow": {
+                "background": "#171C26",
+                "unfocusedBackground": "#171C26"
+            }
+        }
+    ],
+    "launchMode": "default",
+    "centerOnLaunch": true,
+    "theme": "Neon Window",
+    "alwaysShowTabs": true,
+    "showTabsInTitlebar": false,
+    "showTabsFullscreen": false,
+    "showTerminalTitleInTitlebar": true,
+    "useAcrylicInTabRow": false,
+    "startupActions": "new-tab ; split-pane -V -s 0.49 ; split-pane -H -s 0.53 ; split-pane -H -s 0.42"
+}
