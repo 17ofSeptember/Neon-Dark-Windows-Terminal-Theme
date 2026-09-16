@@ -131,7 +131,7 @@ Each pane uses your current/default Windows Terminal profile.
 Copy `.tmux.conf` from this repository into your WSL home directory:
 
 ```bash
-cp /path/to/repo/.tmux.conf ~/.tmux.conf
+cp /path/to/repo/tmux.conf ~/.tmux.conf
 ```
 
 Then start tmux:
